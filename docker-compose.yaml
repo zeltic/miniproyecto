@@ -1,0 +1,13 @@
+
+version: '3'
+
+services:
+  db:
+    image: mongo:5
+    restart: unless-stopped
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_DATABASE: nest-miniproyecto
+    volumes:
+      - ./mongo:/data/db
