@@ -5,7 +5,7 @@ import { UpdateMaintaskDto } from './dto/update-maintask.dto';
 import { ParseMongoIdPipe } from 'src/common/pipes/parse-mongo-id/parse-mongo-id.pipe';
 import { ParseMongoIdArrayPipe } from 'src/common/pipes/parse-mongo-id-array/parse-mongo-id-array.pipe';
 
-@Controller('todo')
+@Controller('maintask')
 export class MaintaskController {
   constructor(private readonly maintaskService: MaintaskService) {}
 
