@@ -13,6 +13,7 @@ import { Task, TaskSchema } from './entities/task.entity';
         name: Task.name,
         schema: TaskSchema,
       }
-    ])]
+    ])],
+    exports: [TasksService]
 })
 export class TasksModule {}
